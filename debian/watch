@@ -1,0 +1,3 @@
+version=4
+https://cran.r-project.org/src/contrib/dplyr_([-0-9\.]*)\.tar\.(?:gz|bz2|xz)
+

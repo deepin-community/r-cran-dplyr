@@ -1,0 +1,22 @@
+Explanation for binary files inside source package according to
+  http://lists.debian.org/debian-devel/2013/09/msg00332.html
+
+The source packages contains some binary RData files which are
+documented inside the according manpages
+
+Files: data/nasa.rda
+Documentation: man/nasa.Rd
+  NASA spatio-temporal data
+  This data was obtained from the ASA 2007 data expo (NASA Langley Research
+  Center Atmospheric Sciences) at
+    http://stat-computing.org/dataexpo/2006/
+  which specifies the following copyright terms
+    
+  NASA copyright:
+
+  NASA have allowed us to use their data with the understanding that it
+  will be used for this competition, and request that they receive a copy
+  of all entries so that they have the opportunity to use the material as
+  examples on the MY NASA DATA web site.
+
+ -- Andreas Tille <tille@debian.org>  Tue, 22 Mar 2016 12:05:59 +0100

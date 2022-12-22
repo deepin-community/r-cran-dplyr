@@ -1,0 +1,204 @@
+r-cran-dplyr (1.0.7-2) unstable; urgency=medium
+
+  * Team Upload.
+  * d/patches,d/control: Enforce versioned dep on r-cran-tibble
+  * Bump Standards-Version to 4.6.0 (no changes needed)
+
+ -- Nilesh Patra <nilesh@debian.org>  Fri, 01 Oct 2021 11:39:13 +0530
+
+r-cran-dplyr (1.0.7-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Tue, 17 Aug 2021 09:17:03 +0200
+
+r-cran-dplyr (1.0.4-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Thu, 04 Feb 2021 14:43:43 +0100
+
+r-cran-dplyr (1.0.3-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.5.1 (routine-update)
+
+ -- Andreas Tille <tille@debian.org>  Fri, 22 Jan 2021 13:55:27 +0100
+
+r-cran-dplyr (1.0.2-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Tue, 01 Sep 2020 18:18:29 +0200
+
+r-cran-dplyr (1.0.0-2) unstable; urgency=medium
+
+  [ Balint Reczey ]
+  * Use r-cran-dbplyr in autopkgest and disable tests using lobstr
+    (Closes: #962796)
+
+ -- Dylan Aïssi <daissi@debian.org>  Fri, 10 Jul 2020 10:21:26 +0200
+
+r-cran-dplyr (1.0.0-1) unstable; urgency=medium
+
+  * New upstream version
+    Closes: #961875
+  * debhelper-compat 13 (routine-update)
+  * Testsuite: autopkgtest-pkg-r (routine-update)
+
+ -- Andreas Tille <tille@debian.org>  Sun, 31 May 2020 16:24:34 +0200
+
+r-cran-dplyr (0.8.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+
+ -- Dylan Aïssi <daissi@debian.org>  Sat, 14 Mar 2020 14:45:07 +0100
+
+r-cran-dplyr (0.8.4-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.5.0 (routine-update)
+  * debhelper-compat 12 (routine-update)
+  * dh-update-R to update Build-Depends (routine-update)
+  * autopkgtest: s/ADTTMP/AUTOPKGTEST_TMP/g (routine-update)
+  * Set upstream metadata fields: Archive, Bug-Database, Bug-Submit,
+    Repository, Repository-Browse.
+
+ -- Andreas Tille <tille@debian.org>  Tue, 04 Feb 2020 11:48:14 +0100
+
+r-cran-dplyr (0.8.3-1) unstable; urgency=medium
+
+  * New upstream version
+  * debhelper 12
+  * Standards-Version: 4.3.0
+
+ -- Andreas Tille <tille@debian.org>  Tue, 09 Jul 2019 09:35:54 +0200
+
+r-cran-dplyr (0.7.8-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Andreas Tille ]
+  * Drop now unused override since dh-r cares for this
+
+  [ Dylan Aïssi ]
+  * New upstream version (Closes: #912003)
+  * dh-update-R to update Build-Depends
+
+ -- Dylan Aïssi <daissi@debian.org>  Sun, 18 Nov 2018 18:44:24 +0100
+
+r-cran-dplyr (0.7.7-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.2.1
+  * documentation is where it is expected by GNU R users
+
+ -- Andreas Tille <tille@debian.org>  Sat, 20 Oct 2018 08:20:22 +0200
+
+r-cran-dplyr (0.7.6-1) unstable; urgency=medium
+
+  * New upstream version
+  * use r-cran-bh instead of patching DESCRIPTION
+
+ -- Andreas Tille <tille@debian.org>  Mon, 02 Jul 2018 11:20:36 +0200
+
+r-cran-dplyr (0.7.5-1) unstable; urgency=medium
+
+  * New upstream version
+  * debhelper 11
+  * Maintainer: Debian R Packages Maintainers <r-pkg-team@alioth-
+    lists.debian.net>
+  * Point Vcs fields to salsa.debian.org
+  * dh-update-R to update Build-Depends
+  * Secure URI in watch file
+
+ -- Andreas Tille <tille@debian.org>  Wed, 23 May 2018 08:35:21 +0200
+
+r-cran-dplyr (0.7.4-3) unstable; urgency=medium
+
+  * Fix autopkgtest (thanks for the patch to Steve Langasek
+    <steve.langasek@canonical.com>)
+    Closes: #891947
+  * Deactivate skip-utf8-tests
+
+ -- Andreas Tille <tille@debian.org>  Sun, 04 Mar 2018 08:22:37 +0100
+
+r-cran-dplyr (0.7.4-2) unstable; urgency=medium
+
+  * Update Build-Depends
+  * Add test Depends: r-cran-withr, r-cran-hms, r-cran-bit64
+  * Skip failing UTF-8 tests
+
+ -- Graham Inggs <ginggs@debian.org>  Thu, 09 Nov 2017 12:57:01 +0000
+
+r-cran-dplyr (0.7.4-1) unstable; urgency=medium
+
+  [ Gordon Ball ]
+  * Adjusted test dependencies
+
+  [ Andreas Tille ]
+  * New upstream version
+  * New Build-Depends: r-cran-bindrcpp, r-cran-glue, r-cran-pkgconfig,
+                       r-cran-plogr
+  * Convert to dh-r
+  * Canonical homepage for CRAN
+  * debhelper 10
+  * d/watch: version=4
+  * Moved packaging from SVN to Git
+  * Standards-Version: 4.1.1
+
+ -- Andreas Tille <tille@debian.org>  Sun, 01 Oct 2017 00:16:45 +0200
+
+r-cran-dplyr (0.5.0-1) unstable; urgency=medium
+
+  [ Charles Plessy ]
+  * New upstream version, closes #831891.
+  * debian/watch: correct regular expression.
+  * debian/patches: update.
+
+  [ Andreas Tille ]
+  * New (Build-)Depends: r-cran-tibble
+
+ -- Andreas Tille <tille@debian.org>  Sun, 24 Jul 2016 07:35:45 +0200
+
+r-cran-dplyr (0.4.3-6) unstable; urgency=medium
+
+  * Recommends: r-cran-rsqlite
+  * Test depends: r-cran-rsqlite
+
+ -- Andreas Tille <tille@debian.org>  Tue, 03 May 2016 22:26:16 +0200
+
+r-cran-dplyr (0.4.3-5) unstable; urgency=medium
+
+  * Recommends: r-cran-data.table
+  * Test depends: r-cran-data.table
+
+ -- Andreas Tille <tille@debian.org>  Sat, 30 Apr 2016 08:16:15 +0200
+
+r-cran-dplyr (0.4.3-4) unstable; urgency=medium
+
+  * Exclude tests needing r-cran-lahman which is not packaged yet
+
+ -- Andreas Tille <tille@debian.org>  Fri, 29 Apr 2016 09:30:36 +0200
+
+r-cran-dplyr (0.4.3-3) unstable; urgency=medium
+
+  * Add missing depends: r-cran-rcpp
+
+ -- Andreas Tille <tille@debian.org>  Thu, 28 Apr 2016 11:27:58 +0200
+
+r-cran-dplyr (0.4.3-2) unstable; urgency=medium
+
+  * Add missing depends r-cran-assertthat (and others)
+    Closes: #820409
+
+ -- Andreas Tille <tille@debian.org>  Fri, 08 Apr 2016 08:06:02 +0200
+
+r-cran-dplyr (0.4.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #819343)
+
+ -- Andreas Tille <tille@debian.org>  Mon, 04 Apr 2016 21:01:02 +0200

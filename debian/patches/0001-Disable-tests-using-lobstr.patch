@@ -1,0 +1,54 @@
+From: Balint Reczey <balint.reczey@canonical.com>
+Date: Sun, 21 Jun 2020 14:20:41 +0200
+Subject: Disable tests using lobstr
+
+---
+ tests/testthat/test-bind.R     | 2 ++
+ tests/testthat/test-group-by.r | 1 +
+ tests/testthat/test-mutate.r   | 1 +
+ 3 files changed, 4 insertions(+)
+
+diff --git a/tests/testthat/test-bind.R b/tests/testthat/test-bind.R
+index 8a5d8ce..719d04d 100644
+--- a/tests/testthat/test-bind.R
++++ b/tests/testthat/test-bind.R
+@@ -3,6 +3,7 @@ context("binds")
+ # columns -----------------------------------------------------------------
+ 
+ test_that("cbind uses shallow copies", {
++  skip("Needs packaged lobstr")
+   df1 <- data.frame(
+     int = 1:10,
+     num = rnorm(10),
+@@ -21,6 +22,7 @@ test_that("cbind uses shallow copies", {
+ })
+ 
+ test_that("bind_cols handles lists (#1104)", {
++  skip("Needs packaged lobstr")
+   exp <- tibble(x = 1, y = "a", z = 2)
+ 
+   l1 <- list(x = 1, y = "a")
+diff --git a/tests/testthat/test-group-by.r b/tests/testthat/test-group-by.r
+index dfa94b1..60bbc47 100644
+--- a/tests/testthat/test-group-by.r
++++ b/tests/testthat/test-group-by.r
+@@ -82,6 +82,7 @@ test_that("mutate does not loose variables (#144)", {
+ })
+ 
+ test_that("group_by uses shallow copy", {
++  skip("Needs packaged lobstr")
+   m1 <- group_by(mtcars, cyl)
+   expect_equal(group_vars(mtcars), character())
+ 
+diff --git a/tests/testthat/test-mutate.r b/tests/testthat/test-mutate.r
+index 39c5607..fd709f4 100644
+--- a/tests/testthat/test-mutate.r
++++ b/tests/testthat/test-mutate.r
+@@ -225,6 +225,7 @@ test_that("mutate() hands list columns with rowwise magic to follow up expressio
+ # other -------------------------------------------------------------------
+ 
+ test_that("no utf8 invasion (#722)", {
++  skip("Needs packaged lobstr")
+   skip_if_not(l10n_info()$"UTF-8")
+   source("utf-8.txt", local = TRUE, encoding = "UTF-8")
+ })
